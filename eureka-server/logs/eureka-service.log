@@ -1,0 +1,89 @@
+2024-09-19T05:43:18.213+05:30  INFO 953 --- [eureka-server] [main] com.example.EurekaServerApplication      : Starting EurekaServerApplication using Java 17.0.12 with PID 953 (/Users/admin/workspace/spring-cloud-microservice/eureka-server/target/classes started by admin in /Users/admin/workspace/spring-cloud-microservice/eureka-server)
+2024-09-19T05:43:18.215+05:30  INFO 953 --- [eureka-server] [main] com.example.EurekaServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-09-19T05:43:19.252+05:30  INFO 953 --- [eureka-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd468fec-22a6-3c60-be19-47e67c4fbf79
+2024-09-19T05:43:19.305+05:30  WARN 953 --- [eureka-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-19T05:43:19.308+05:30  WARN 953 --- [eureka-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-19T05:43:19.568+05:30  INFO 953 --- [eureka-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2024-09-19T05:43:19.582+05:30  INFO 953 --- [eureka-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-19T05:43:19.583+05:30  INFO 953 --- [eureka-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-19T05:43:19.653+05:30  INFO 953 --- [eureka-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-19T05:43:19.653+05:30  INFO 953 --- [eureka-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1399 ms
+2024-09-19T05:43:20.586+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-09-19T05:43:20.588+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-09-19T05:43:20.823+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-09-19T05:43:20.823+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-09-19T05:43:21.693+05:30  WARN 953 --- [eureka-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-19T05:43:21.712+05:30  INFO 953 --- [eureka-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-19T05:43:21.735+05:30  INFO 953 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-19T05:43:21.736+05:30  INFO 953 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2024-09-19T05:43:21.738+05:30  INFO 953 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1726704801737 with initial instances count: 0
+2024-09-19T05:43:21.777+05:30  INFO 953 --- [eureka-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2024-09-19T05:43:21.779+05:30  INFO 953 --- [eureka-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2024-09-19T05:43:21.990+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-09-19T05:43:21.990+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-09-19T05:43:21.990+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-09-19T05:43:21.990+05:30  INFO 953 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-09-19T05:43:22.030+05:30  INFO 953 --- [eureka-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2024-09-19T05:43:22.041+05:30  INFO 953 --- [eureka-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2024-09-19T05:43:22.041+05:30  INFO 953 --- [eureka-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2024-09-19T05:43:22.049+05:30  INFO 953 --- [eureka-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-19T05:43:22.097+05:30  INFO 953 --- [eureka-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2024-09-19T05:43:22.106+05:30  INFO 953 --- [eureka-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2024-09-19T05:43:22.107+05:30  INFO 953 --- [eureka-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2024-09-19T05:43:22.107+05:30  INFO 953 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2024-09-19T05:43:22.108+05:30  INFO 953 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2024-09-19T05:43:22.108+05:30  INFO 953 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2024-09-19T05:43:22.110+05:30  INFO 953 --- [eureka-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2024-09-19T05:43:22.117+05:30  INFO 953 --- [eureka-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2024-09-19T05:43:22.117+05:30  INFO 953 --- [eureka-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2024-09-19T05:43:22.139+05:30  INFO 953 --- [eureka-server] [main] com.example.EurekaServerApplication      : Started EurekaServerApplication in 4.43 seconds (process running for 4.822)
+2024-09-19T05:43:43.355+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-19T05:43:43.355+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-19T05:43:43.357+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-19T05:44:07.243+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway:6ff5409dc8e431b2d4eefd20dab6c44d with status UP (replication=false)
+2024-09-19T05:44:07.890+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway:6ff5409dc8e431b2d4eefd20dab6c44d with status UP (replication=true)
+2024-09-19T05:44:22.110+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2024-09-19T05:45:22.111+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2024-09-19T05:45:33.091+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613 with status UP (replication=false)
+2024-09-19T05:45:33.600+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613 with status UP (replication=true)
+2024-09-19T05:46:22.112+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2024-09-19T05:46:50.254+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613 with status DOWN (replication=false)
+2024-09-19T05:46:50.767+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613 with status DOWN (replication=true)
+2024-09-19T05:46:53.262+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613 (replication=false)
+2024-09-19T05:46:53.776+05:30  WARN 953 --- [eureka-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613
+2024-09-19T05:46:53.776+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): INVENTORY-SERVICE - inventory-service:d06664d20a9f042580740e0995c37613
+2024-09-19T05:46:53.778+05:30  WARN 953 --- [eureka-server] [TaskBatchingWorker-target_localhost-7] c.n.eureka.cluster.ReplicationTask       : The replication of task INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613:Cancel@localhost failed with response code 404
+2024-09-19T05:46:53.778+05:30  WARN 953 --- [eureka-server] [TaskBatchingWorker-target_localhost-7] c.netflix.eureka.cluster.PeerEurekaNode  : INVENTORY-SERVICE/inventory-service:d06664d20a9f042580740e0995c37613:Cancel@localhost: missing entry.
+2024-09-19T05:47:00.059+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:3783d1558fbbfacc1bac02853114b40a with status UP (replication=false)
+2024-09-19T05:47:00.569+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/inventory-service:3783d1558fbbfacc1bac02853114b40a with status UP (replication=true)
+2024-09-19T05:47:22.113+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2024-09-19T05:48:22.114+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2024-09-19T05:49:22.118+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2024-09-19T05:50:22.118+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2024-09-19T05:51:22.121+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2024-09-19T05:52:22.135+05:30  INFO 953 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2024-09-19T05:53:18.502+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA-SERVER with eureka with status DOWN
+2024-09-19T05:53:18.509+05:30  INFO 953 --- [eureka-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway:6ff5409dc8e431b2d4eefd20dab6c44d with status DOWN (replication=false)
+2024-09-19T05:53:18.512+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2024-09-19T05:53:18.512+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2024-09-19T05:53:18.518+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2024-09-19T05:53:18.518+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2024-09-19T05:53:18.519+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2024-09-19T05:53:18.520+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2024-09-19T05:53:18.514+05:30 ERROR 953 --- [eureka-server] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.8.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.8.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.8.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.8.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.3.jar:2.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-19T05:53:18.528+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-09-19T05:53:18.528+05:30  INFO 953 --- [eureka-server] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
